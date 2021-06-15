@@ -1,5 +1,6 @@
 /*Master styles*/
 body {
+  font-family: "Lato", sans-serif;
   margin: 0px;
 }
 .container {
@@ -35,6 +36,12 @@ body {
 }
 .nav-link-wrapper a:hover {
   color: black;
+}
+.active-nav-link {
+  border-bottom: 1px solid lightgreen;
+}
+.active-nav-link a {
+  color: black !important;
 }
 /*Portfolio styles*/
 .portfolio-items-wrapper {
@@ -81,4 +88,24 @@ body {
 .img-darken {
   transition: 1s;
   filter: brightness(10%);
+}
+/*About styles*/
+.two-columns-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.profile-image-wrapper img {
+  width: 350px;
+  border-radius: 100px;
+  padding: 10%;
+  margin-left: 30%;
+}
+.profile-content-wrapper {
+  padding: 10%;
+  margin-right: 30%;
+}
+.profile-content-wrapper h1,
+h2 {
+  color: lightgreen;
+  font-weight: 900;
 }
